@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="Jeopardy.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="main-header" class="title">
+            <h1>Jeopardy</h1>
+            <div id="points-header">Points: <p id="point-amount"></p>
+            </div>
+        </div>
+        <div id="main-question">
+            <div class="jumbotron">
+                <h1 id="category" class="display-4"></h1>
+                <p id="question" class="lead"></p>
+                <label for="questionValue">Point Value: </label>
+                <p id="questionValue"></p>
+                <hr class="my-4">
+                <p id="remarks"></p>
+                <p id="answer"></p>
+                <label for="userAnswer" id="userAnswerLabel">Answer: </label>
+                <input type="text/plain" id="userAnswer">
+            </div>
+            <br />
+        </div>
+        <button id="A-btn" type="button" class="btn btn-outline-primary">Reveal Answer</button>
+        <button id="NQ-btn" type="button" class="btn btn-outline-primary">Get New Question</button>
+    </div>
+
+
+    <script src="Jeopardy.js"></script>
+</body>
+
+</html>
