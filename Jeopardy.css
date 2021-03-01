@@ -1,3 +1,11 @@
 #main-container{
+    display: flex;
     padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main-question{
+    width: 400px;
 }
