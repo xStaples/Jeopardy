@@ -44,8 +44,12 @@ const showAnswer = () => {
 
     if (userGuess == answer){
         document.getElementById('remarks').innerHTML = "Correct";
+        points = addPoints();
+        document.getElementById('point-amount').innerHTML = points;
     } else {
-        document.getElementById('remarks').innerHTML = "Incorrect";    
+        document.getElementById('remarks').innerHTML = "Incorrect";  
+        points = subtractPoints();
+        document.getElementById('point-amount').innerHTML = points;
     }
 }
 
@@ -64,5 +68,14 @@ const setQuestionValue = (questionValue) => {
 }
 
 const addPoints = () => {
-
+    let questionValue = document.getElementById('questionValue').innerHTML;
+    let sum = points + parseInt(questionValue);
+    return sum;
 }
+
+const subtractPoints = () => {
+    let questionValue = document.getElementById('questionValue').innerHTML;
+    let difference = points - parseInt(questionValue);
+    return difference;
+}
+
