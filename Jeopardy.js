@@ -16,8 +16,6 @@ const getQuestion = () => {
     .then((response) => response.json())
     .then((data)=> {
 
-        let x = (Math.random() * 100) + 1;
-        console.log(x);
         console.log(data);
         setCategory(data[0].category.title)
         setQuestion(data[0].question)
